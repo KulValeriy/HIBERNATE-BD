@@ -16,21 +16,21 @@ public class Main {
 
         userService.createUsersTable();
 
-        //userService.saveUser(user1.getName(), user1.getLastName(), user1.getAge());
+        userService.saveUser(user1.getName(), user1.getLastName(), user1.getAge());
 
-        //userService.saveUser(user2.getName(), user2.getLastName(), user2.getAge());
+        userService.saveUser(user2.getName(), user2.getLastName(), user2.getAge());
 
-        //userService.saveUser(user3.getName(), user3.getLastName(), user3.getAge());
+        userService.saveUser(user3.getName(), user3.getLastName(), user3.getAge());
 
-        //userService.saveUser(user4.getName(), user4.getLastName(), user4.getAge());
+        userService.saveUser(user4.getName(), user4.getLastName(), user4.getAge());
 
-        //userService.getAllUsers();
+        userService.getAllUsers();
 
-        //userService.removeUserById(3);
+        userService.removeUserById(3);
 
-        //userService.cleanUsersTable();
+        userService.cleanUsersTable();
 
-        //userService.dropUsersTable();
+        userService.dropUsersTable();
     }
 }
 
