@@ -28,13 +28,13 @@ public class Main {
         userService.saveUser(user4.getName(), user4.getLastName(), user4.getAge());
         System.out.println("User с именем – " + user4.getName() + " добавлен в базу данных");
 
-        //userService.getAllUsers();
+        userService.getAllUsers();
 
-        //userService.removeUserById(3);
+        userService.removeUserById(3);
 
-        //userService.cleanUsersTable();
+        userService.cleanUsersTable();
 
-        //userService.dropUsersTable();
+        userService.dropUsersTable();
     }
 }
 

@@ -4,7 +4,7 @@ import jm.task.core.jdbc.dao.UserDaoHibernateImpl;
 
 import jm.task.core.jdbc.model.User;
 
-import java.lang.ref.SoftReference;
+
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
