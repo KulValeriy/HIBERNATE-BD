@@ -1,5 +1,6 @@
 package jm.task.core.jdbc;
 
+import jm.task.core.jdbc.dao.UserDaoHibernateImpl;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
@@ -7,7 +8,9 @@ import jm.task.core.jdbc.service.UserServiceImpl;
 public class Main {
     public static void main(String[] args) {
         // реализуйте алгоритм здесь
-        UserService userService = new UserServiceImpl();
+
+        UserService userService = new UserServiceImpl(new UserDaoHibernateImpl());
+        //UserService userService = new UserServiceImpl();
 
         User user1 = new User("Valery", "Kuleshov", (byte) 28);
         User user2 = new User("Anton", "Antonov", (byte) 56);
